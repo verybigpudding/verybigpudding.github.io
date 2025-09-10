@@ -10,11 +10,11 @@
 
 <body class="p-3 d-flex justify-content-center align-items-start" style="min-height:100vh;">
   <div class="container" style="margin-top:3rem; max-width:500px;">
-    <div class="container" style="margin-top:3rem; max-width:360px;">
+    <div class="container" style="margin-top:3rem; max-width:320px;">
       <!-- 幾百 -->
       <div class="mb-3" style="font-size:1.5rem;">
         <label class="form-label" style="color:black;">
-          衣服 <span style="color:white;">.000000</span>
+          衣服 <span style="color:white;">.000</span>
         </label>
         <button id="cloth450" class="btn btn-outline-primary me-2" style="font-size:1.5rem;"
           onclick="selectClothes(450, 'cloth450')">$450</button>
@@ -25,7 +25,7 @@
       <!-- 小圖 -->
       <div class="d-flex align-items-center mb-3" style="font-size:1.5rem;">
         <span class="me-3">小圖 ($150)</span>
-        <p style="color:white;">000000</p>
+        <p style="color:white;">000</p>
         <button class="btn btn-outline-secondary me-2" onclick="updateItem('smallPic', -1)">-</button>
         <span id="smallPic" class="me-2">0</span>
         <button class="btn btn-outline-secondary" onclick="updateItem('smallPic', 1)">+</button>
@@ -34,7 +34,7 @@
       <!-- 大圖 -->
       <div class="d-flex align-items-center mb-3" style="font-size:1.5rem;">
         <span class="me-3">大圖 ($250)</span>
-        <p style="color:white;">000000</p>
+        <p style="color:white;">000</p>
         <button class="btn btn-outline-secondary me-2" onclick="updateItem('bigPic', -1)">-</button>
         <span id="bigPic" class="me-2">0</span>
         <button class="btn btn-outline-secondary" onclick="updateItem('bigPic', 1)">+</button>
@@ -43,7 +43,7 @@
       <!-- 顏色 -->
       <div class="d-flex align-items-center mb-3" style="font-size:1.5rem;">
         <span class="me-3">顏色 ($50)</span>
-        <p style="color:white;">0000000</p>
+        <p style="color:white;">0000</p>
         <button class="btn btn-outline-secondary me-2" onclick="updateItem('color', -1)">-</button>
         <span id="color" class="me-2">0</span>
         <button class="btn btn-outline-secondary" onclick="updateItem('color', 1)">+</button>
@@ -52,7 +52,7 @@
       <!-- 文字 -->
       <div class="d-flex align-items-center mb-3" style="font-size:1.5rem;">
         <span class="me-3">文字 ($30)</span>
-        <p style="color:white;">0000000</p>
+        <p style="color:white;">0000</p>
         <button class="btn btn-outline-secondary me-2" onclick="updateItem('text', -1)">-</button>
         <span id="text" class="me-2">0</span>
         <button class="btn btn-outline-secondary" onclick="updateItem('text', 1)">+</button>
@@ -62,7 +62,7 @@
       <div class="mt-4 text-end">
         <div>
           <p style="color:white;">0</p>
-          <h4>總金額: <span id="total">0</span></h4>
+          <h2>總金額: <span id="total">0</span></h2>
           <button class="btn btn-primary mt-2" onclick="confirmOrder()">確定</button>
           <div id="history" class="mt-4"></div>
         </div>
